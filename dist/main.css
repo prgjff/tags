@@ -1,0 +1,85 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #50555a;
+    padding: 0em;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.note {
+    border-bottom: 1px solid #e7e8ec;
+    padding: 0.5em 0.25em;
+}
+
+.note:hover {
+    background: #F5F7FA
+}
+
+.note .footer {
+    margin-top: 5px;
+}
+
+.note .footer div {
+    float: left;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin: 0.2em;
+    background: #e2edf8;
+    border-radius: 0.3em;
+    padding: 0.2em 0.4em;
+}
+
+.note .footer .tag-color {
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 100%;
+    background: red;
+    border: 1px solid red;
+    padding: 0.1em;
+    margin-top: 0.5em;
+}
+
+.note .footer::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+
+.layout-buttons {
+    right: 1em;
+    bottom: 1em;
+    position: fixed;
+    z-index: 1;
+}
+
+.circle{
+    float: right;
+    position: relative;
+    background: #f46a4e;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+}
+.circle.plus:before,
+.circle.plus:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#ffffff;
+}
+.circle.plus:before{
+    width: 0.2em;
+    margin: 25% auto;
+}
+.circle.plus:after{
+    margin: auto 25%;
+    height: 0.2em;
+}
